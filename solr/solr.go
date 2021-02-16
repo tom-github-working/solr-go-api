@@ -52,7 +52,7 @@ type FireworkCollection struct {
 type FireworkSolrResult struct {
 	Status  int                // status quick access to status
 	Results FireworkCollection `json:"response"` // results parsed documents, basically response object
-	QTime   int
+	QTime   float
 	Params  map[string]string `json:"params"`
 
 	ResponseHeader map[string]interface{}
